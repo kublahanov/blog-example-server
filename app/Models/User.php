@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 
+/**
+ * @method static where(string $string, mixed $email)
+ */
 class User extends Authenticatable
 {
     use HasFactory, Notifiable, HasApiTokens;
