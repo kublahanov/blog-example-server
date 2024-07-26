@@ -15,9 +15,11 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        Post::factory(10)->create()->each(function ($post) {
-            $tags = Tag::inRandomOrder()->take(random_int(1, 3))->pluck('id');
-            $post->tags()->attach($tags);
-        });
+        Post::factory(20)->create();
+
+        // Post::factory(10)->create()->each(function ($post) {
+        //     $tags = Tag::inRandomOrder()->take(random_int(1, 3))->pluck('id');
+        //     $post->tags()->attach($tags);
+        // });
     }
 }
