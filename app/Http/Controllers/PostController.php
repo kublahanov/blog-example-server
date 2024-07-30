@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index(): LengthAwarePaginator
     {
-        return Post::with('tags:name', 'user:id,name')->paginate(10);
+        return Post::with('tags:name', 'user:id,name')->paginate(100);
     }
 
     /**
