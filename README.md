@@ -16,10 +16,16 @@
 1. Склонировать код репозитория: ```git clone git@github.com:kublahanov/winwin-server-laravel11.git```.
 2. Перейти в полученную папку проекта: ```cd winwin-server-laravel11```.
 3. Выполнить сборку: ```composer install ; composer run-script post-root-package-install```.
-4. Запустить стек приложения, и войти в оболочку рабочего контейнера: ```./vendor/bin/sail up -d ; ./vendor/bin/sail shell```.
-5. Выполнить генерацию ключа приложения, миграцию и сидирование базы данных: ```./artisan key:generate --ansi ; ./artisan migrate --seed```.
+4. Запустить стек приложения, и войти в оболочку рабочего
+   контейнера: ```./vendor/bin/sail up -d ; ./vendor/bin/sail shell```.
+5. Выполнить генерацию ключа приложения, миграцию и сидирование базы
+   данных: ```./artisan key:generate --ansi ; ./artisan migrate --seed```.
 6. Выполнить настройку авторизационной системы: ```./artisan passport:keys ; ./artisan passport:client --personal -q```.
 7. REST API для работы с клиентским приложением будет доступно по адресу: http://localhost/.
+
+Альтернативный вариант - сборка и настройка с помощью скрипта:
+
+- Вместо пунктов 3-7 из вышеуказанного списка - запустить shell-скрипт: `./setup.sh`.
 
 ---
 
