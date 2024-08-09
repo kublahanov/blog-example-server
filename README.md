@@ -1,4 +1,4 @@
-# WinWin Server Laravel11
+# Blog example (test case): backend REST API based on Laravel 11 + Laravel Sail + Laravel Passport
 
 ## Необходимые требования
 
